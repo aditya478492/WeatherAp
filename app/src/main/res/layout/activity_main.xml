@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:background="#b3de5b"
+        android:background="@drawable/cloud"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -22,7 +22,10 @@
             android:layout_marginStart="14dp"
             android:ems="10"
             android:hint="Location"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@android:color/holo_red_light"
+            android:textColorHighlight="@android:color/holo_red_light"
+            android:textColorHint="@android:color/holo_red_light" />
 
         <ImageButton
             android:id="@+id/getLocation"
@@ -87,8 +90,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
-            android:background="@android:color/holo_orange_light"
-            android:divider="@android:color/holo_blue_light"
+            android:background="#729dd9"
+            android:divider="#24292b"
             android:dividerHeight="2dp"
             android:focusableInTouchMode="false"
             android:isScrollContainer="false" />
