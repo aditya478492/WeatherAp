@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#b3de5b"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/etplace"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:ems="10"
+            android:hint="Location"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/getLocation"
+            android:layout_width="61dp"
+            android:layout_height="49dp"
+            android:layout_alignBottom="@+id/etplace"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="-11dp"
+            android:layout_marginEnd="11dp"
+            android:cropToPadding="true"
+            android:onClick="getLocation"
+            app:srcCompat="@drawable/loc" />
+
+        <ImageView
+            android:id="@+id/imgcond"
+            android:layout_width="129dp"
+            android:layout_height="122dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/etplace"
+            android:layout_marginTop="61dp"
+            app:srcCompat="@drawable/cloudy" />
+
+        <TextView
+            android:id="@+id/tvcondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etplace"
+            android:layout_below="@+id/imgcond"
+            android:text="TextView"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginTop="75dp"
+            android:text="N/A"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/tvcity"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/getLocation"
+            android:layout_below="@+id/imgcond"
+            android:text="TextView"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/lstvw"
+            android:layout_width="match_parent"
+            android:layout_height="359dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_orange_light"
+            android:divider="@android:color/holo_blue_light"
+            android:dividerHeight="2dp"
+            android:focusableInTouchMode="false"
+            android:isScrollContainer="false" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etplace"
+            android:layout_below="@+id/etplace"
+            android:text="Today"
+            android:textColor="@android:color/holo_red_light" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
